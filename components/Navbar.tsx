@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
-import Logo from "@/public/logo/logo.png"
+import Logo from "@/public/logo/logo.png";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -24,7 +24,7 @@ export default function Navbar() {
     if (target) {
       target.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-    setMenuOpen(false); 
+    setMenuOpen(false);
   };
 
   return (
@@ -38,16 +38,15 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          {/* Logo */}
+      
           <div className="flex items-center">
             <Image
-              src={Logo} 
+              src={Logo}
               alt="Rapid Miles Logistics Logo"
               className="h-10 w-auto mr-2"
             />
           </div>
 
-          {/* Desktop Menu */}
           <ul className="hidden md:flex gap-8 list-none">
             {["home", "about", "services", "contact"].map((item) => (
               <li key={item}>
@@ -62,16 +61,16 @@ export default function Navbar() {
             ))}
           </ul>
 
-          {/* Get Quote button */}
+         
           <a
             href="#contact"
             onClick={(e) => handleSmoothScroll(e, "#contact")}
             className="hidden md:inline-block bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-800 hover:-translate-y-0.5 transition-transform"
           >
-            Get Quote
+            Get In Touch
           </a>
 
-          {/* Hamburger Icon */}
+         
           <button
             onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden focus:outline-none"
@@ -84,8 +83,7 @@ export default function Navbar() {
           </button>
         </div>
 
-        {/* Mobile Menu */}
-        {menuOpen && (
+      {menuOpen && (
           <div className="md:hidden mt-4 flex flex-col gap-4">
             {["home", "about", "services", "contact"].map((item) => (
               <a
@@ -102,7 +100,7 @@ export default function Navbar() {
               onClick={(e) => handleSmoothScroll(e, "#contact")}
               className="bg-blue-600 text-white px-4 py-2 rounded-lg font-semibold hover:bg-blue-800 transition-transform"
             >
-              Get Quote
+              Get In Touch
             </a>
           </div>
         )}

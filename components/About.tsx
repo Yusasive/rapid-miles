@@ -15,7 +15,7 @@ export default function About() {
     <section id="about" className="py-20 bg-[#f5f9ff]">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          {/* Text */}
+     
           <div>
             <h2 className="text-4xl font-semibold text-gray-800 mb-6">
               Leading the Future of Logistics
@@ -49,7 +49,6 @@ export default function About() {
             </div>
           </div>
 
-          {/* Image */}
           <div className="p-6">
             <Image
               src="/images/about.png"

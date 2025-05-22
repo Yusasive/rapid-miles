@@ -13,7 +13,6 @@ export default function Partners() {
     { src: "/images/partner6.jpg", alt: "Partner 6" },
   ];
 
-  // Duplicate logos for smooth looping
   const scrollingLogos = [...partnerLogos, ...partnerLogos];
 
   return (
@@ -29,7 +28,6 @@ export default function Partners() {
           </p>
         </div>
 
-        {/* Marquee effect */}
         <div className="relative w-full overflow-hidden">
           <div className="flex whitespace-nowrap animate-marquee">
             {scrollingLogos.map((logo, idx) => (

@@ -7,7 +7,6 @@ export default function Footer() {
     <footer className="bg-[#333] text-white pt-16 pb-5">
       <div className="container mx-auto px-4">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4 mb-10">
-          {/* Logo & Description */}
           <div>
             <div className="text-white text-xl font-semibold mb-4">
               <div className="flex items-center">
@@ -26,7 +25,6 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Services */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
@@ -57,7 +55,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Company */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
@@ -88,7 +85,6 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Support */}
           <div>
             <h3 className="text-lg font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
@@ -104,7 +100,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Footer Bottom */}
         <div className="border-t border-teal-500 pt-6 text-center text-teal-400 text-sm">
           &copy; 2025 Rapid Miles Logistics. All rights reserved.
         </div>

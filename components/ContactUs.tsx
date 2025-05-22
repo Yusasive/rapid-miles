@@ -53,7 +53,7 @@ export default function ContactUs() {
         </div>
 
         <div className="grid md:grid-cols-2 gap-16">
-          {/* Contact Info */}
+          
           <div>
             <h3 className="text-2xl font-semibold text-gray-800 mb-6">
               Contact Information
@@ -97,7 +97,6 @@ export default function ContactUs() {
             </div>
           </div>
 
-          {/* Contact Form */}
           <div className="bg-[#f5f9ff] p-10 rounded-2xl shadow-md">
             <form onSubmit={handleSubmit}>
               <div className="mb-6">

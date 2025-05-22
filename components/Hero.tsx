@@ -20,7 +20,6 @@ export default function Hero() {
     >
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          {/* Hero Text */}
           <div>
             <h1 className="text-5xl font-bold text-gray-800 leading-tight mb-6">
               Simplify Your Logistics. Accelerate Your Growth.
@@ -36,7 +35,7 @@ export default function Hero() {
                 onClick={(e) => scrollTo(e, "#contact")}
                 className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-800 transition-transform transform hover:-translate-y-1"
               >
-                Start Shipping
+                Get In Touch
               </a>
               <a
                 href="#services"
@@ -48,7 +47,6 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Hero Image */}
           <div>
             <Image
               src={HeroImage}
