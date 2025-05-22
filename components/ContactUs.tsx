@@ -1,6 +1,8 @@
 "use client";
 
 import React, { useState } from "react";
+import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({
@@ -47,13 +49,12 @@ export default function ContactUs() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800">Get in Touch</h2>
           <p className="text-lg text-gray-600 mt-2">
-            Ready to optimize your logistics? Let&apos;s discuss your shipping
-            needs
+            Ready to optimize your logistics need? Let&apos;s discuss your
+            shipping needs
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-16">
-          
           <div>
             <h3 className="text-2xl font-semibold text-gray-800 mb-6">
               Contact Information
@@ -61,8 +62,8 @@ export default function ContactUs() {
 
             <div className="space-y-6">
               <div className="flex items-start gap-4  text-black ">
-                <div className="w-12 h-12 bg-blue-600 flex items-center justify-center rounded-full text-xl">
-                  📍
+                <div className="w-12 h-12 bg-blue-600 text-white flex items-center justify-center rounded-full text-xl">
+                  <FaMapMarkerAlt />
                 </div>
                 <div>
                   <strong>Address</strong>
@@ -75,7 +76,7 @@ export default function ContactUs() {
 
               <div className="flex items-start gap-4  text-black ">
                 <div className="w-12 h-12 bg-blue-600 text-white flex items-center justify-center rounded-full text-xl">
-                  📞
+                  <FaPhoneAlt />
                 </div>
                 <div>
                   <strong>Phone</strong>
@@ -86,7 +87,7 @@ export default function ContactUs() {
 
               <div className="flex items-start gap-4  text-black ">
                 <div className="w-12 h-12 bg-blue-600 text-white flex items-center justify-center rounded-full text-xl">
-                  ✉️
+                  <MdEmail />
                 </div>
                 <div>
                   <strong>Email</strong>

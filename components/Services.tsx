@@ -1,19 +1,21 @@
+import { FaTruckPickup, FaShippingFast } from "react-icons/fa";
+import { AiFillHome } from "react-icons/ai";
 
 const services = [
   {
-    icon: "📋",
+    icon: <FaTruckPickup className="text-white text-3xl" />,
     title: "Pick-up",
     description:
       "Reliable and timely collection of your packages from any location. Our professional team ensures safe handling and secure pickup of your items with real-time confirmation.",
   },
   {
-    icon: "🚚",
+    icon: <FaShippingFast className="text-white text-3xl" />,
     title: "Delivery",
     description:
       "Fast and secure delivery services to get your packages to their destination safely. We offer flexible delivery options with tracking and confirmation updates.",
   },
   {
-    icon: "🏠",
+    icon: <AiFillHome className="text-white text-3xl" />,
     title: "Last Mile Delivery",
     description:
       "Door-to-door delivery service ensuring your packages reach the final destination. We specialize in residential and business deliveries with customer satisfaction guarantee.",
@@ -29,8 +31,7 @@ export default function Services() {
             Comprehensive Logistics Solutions
           </h2>
           <p className="text-[#007f8c] mt-2">
-            From first mile to last mile, we&apos;ve got your supply chain
-            covered
+            From first mile to last mile, we&apos;ve got your delivery covered
           </p>
         </div>
 

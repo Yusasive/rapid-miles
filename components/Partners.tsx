@@ -23,7 +23,7 @@ export default function Partners() {
             Trusted by Industry Leaders
           </h2>
           <p className="text-lg text-cyan-700">
-            We partner with global brands to deliver exceptional logistics
+            We partner with wonderful brands to deliver exceptional logistics
             solutions
           </p>
         </div>
