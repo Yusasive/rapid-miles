@@ -7,12 +7,12 @@ export default function VisionMission() {
     {
       title: "Our Vision",
       content:
-        "To be the world's most trusted logistics partner, connecting businesses across continents through innovative, sustainable, and efficient supply chain solutions that drive global commerce forward.",
+        "To be the most trusted logistics partner for local businesses, delivering reliable, efficient, and sustainable supply chain solutions that connect businesses and communities, support commerce, and drive regional growth.",
     },
     {
       title: "Our Mission",
       content:
-        "We empower businesses to reach new markets by providing reliable, technology-driven logistics services that simplify complex supply chains and deliver exceptional value to our clients worldwide.",
+        "At Rapid Miles Logistics, our mission is to deliver with speed, care, and consistency. We are dedicated to helping businesses grow by providing dependable delivery solutions that connect people, products, and places, building lasting partnerships every mile of the way.",
     },
   ];
 

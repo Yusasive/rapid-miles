@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import clsx from "clsx";
 import Image from "next/image";
-import Logo from "@/public/logo/logo-transparent.png"
+import Logo from "@/public/logo/logo.png"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

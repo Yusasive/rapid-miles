@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "@/public/logo/logo-light-transparent.png";
+import Logo from "@/public/logo/logo.png";
 
 export default function Footer() {
   return (
@@ -35,7 +35,7 @@ export default function Footer() {
                   href="#"
                   className="text-teal-400 hover:text-white transition"
                 >
-                  Ocean Freight
+                  Pick-up
                 </a>
               </li>
               <li>
@@ -43,7 +43,7 @@ export default function Footer() {
                   href="#"
                   className="text-teal-400 hover:text-white transition"
                 >
-                  Air Freight
+                  Delivery
                 </a>
               </li>
               <li>
@@ -51,15 +51,7 @@ export default function Footer() {
                   href="#"
                   className="text-teal-400 hover:text-white transition"
                 >
-                  Ground Transportation
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-teal-400 hover:text-white transition"
-                >
-                  Warehousing
+                  Last Mile Delivery
                 </a>
               </li>
             </ul>
@@ -67,11 +59,11 @@ export default function Footer() {
 
           {/* Company */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Company</h3>
+            <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#"
+                  href="#about"
                   className="text-teal-400 hover:text-white transition"
                 >
                   About Us
@@ -79,26 +71,18 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#services"
                   className="text-teal-400 hover:text-white transition"
                 >
-                  Careers
+                  Services
                 </a>
               </li>
               <li>
                 <a
-                  href="#"
+                  href="#contact"
                   className="text-teal-400 hover:text-white transition"
                 >
-                  News
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-teal-400 hover:text-white transition"
-                >
-                  Sustainability
+                  Contact Us
                 </a>
               </li>
             </ul>
@@ -113,31 +97,7 @@ export default function Footer() {
                   href="#"
                   className="text-teal-400 hover:text-white transition"
                 >
-                  Contact Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-teal-400 hover:text-white transition"
-                >
-                  Track Shipment
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-teal-400 hover:text-white transition"
-                >
                   Help Center
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="text-teal-400 hover:text-white transition"
-                >
-                  Documentation
                 </a>
               </li>
             </ul>
@@ -146,8 +106,7 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="border-t border-teal-500 pt-6 text-center text-teal-400 text-sm">
-          &copy; 2025 LogiFlow. All rights reserved. | Privacy Policy | Terms of
-          Service
+          &copy; 2025 Rapid Miles Logistics. All rights reserved.
         </div>
       </div>
     </footer>

@@ -21,16 +21,18 @@ export default function About() {
               Leading the Future of Logistics
             </h2>
             <p className="text-cyan-700 text-lg mb-6">
-              With over two decades of experience in global logistics, LogiFlow
-              has established itself as a pioneer in supply chain innovation. We
-              combine cutting-edge technology with human expertise to deliver
-              solutions that transform how businesses move goods across the
-              world.
+              At Rapid Miles Logistics, we&apos;re redefining how goods move. As
+              a newly launched logistics provider, we bring fresh energy, smart
+              technology, and a relentless focus on customer service to every
+              shipment. Our team combines modern logistics strategies with
+              hands-on expertise to ensure your cargo moves smoothly,
+              efficiently, and reliably.
             </p>
             <p className="text-cyan-700 text-lg mb-10">
-              Our commitment to excellence and continuous improvement has earned
-              us the trust of thousands of clients worldwide, from small
-              businesses to Fortune 500 companies.
+              We may be new, but our commitment is strong to build lasting
+              partnerships, deliver real value, and grow alongside the
+              businesses we serve. Welcome to a smarter way to move forward.
+              Welcome to Rapid Miles Logistics.
             </p>
 
             <div className="grid grid-cols-2 gap-8">
@@ -48,13 +50,13 @@ export default function About() {
           </div>
 
           {/* Image */}
-          <div>
+          <div className="p-6">
             <Image
-              src="/images/partner1.jpg"
+              src="/images/about.png"
               alt="About Us"
               width={500}
               height={500}
-              className="w-full rounded-2xl shadow-2xl"
+              className="w-full rounded-2xl shadow-2xl p-10"
             />
           </div>
         </div>

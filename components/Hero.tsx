@@ -23,12 +23,12 @@ export default function Hero() {
           {/* Hero Text */}
           <div>
             <h1 className="text-5xl font-bold text-gray-800 leading-tight mb-6">
-              Streamline Your Supply Chain
+              Simplify Your Logistics. Accelerate Your Growth.
             </h1>
             <p className="text-lg text-cyan-700 mb-8 font-normal">
-              Advanced logistics solutions that connect your business to global
+              Advance logistics solutions that connect your business to global
               markets with precision, speed, and reliability. Experience the
-              future of freight management.
+              future of delivery management.
             </p>
             <div className="flex gap-4">
               <a

@@ -1,8 +1,46 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 
 export default function ContactUs() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("");
+
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setStatus("Sending...");
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      if (data.success) {
+        setStatus("Message sent successfully!");
+        setFormData({ name: "", email: "", company: "", message: "" });
+      } else {
+        setStatus("Failed to send message.");
+      }
+    } catch (error) {
+      console.error("Error sending message:", error);
+      setStatus("An error occurred.");
+    }
+  };
+
   return (
     <section id="contact" className="py-20 bg-white">
       <div className="container mx-auto px-4">
@@ -61,7 +99,7 @@ export default function ContactUs() {
 
           {/* Contact Form */}
           <div className="bg-[#f5f9ff] p-10 rounded-2xl shadow-md">
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="mb-6">
                 <label
                   htmlFor="name"
@@ -69,12 +107,14 @@ export default function ContactUs() {
                 >
                   Full Name
                 </label>
+
                 <input
-                  type="text"
-                  id="name"
                   name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Full Name"
+                  className="w-full px-4 py-3 border border-gray-300 text-gray-700 placeholder:text-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
 
@@ -85,15 +125,17 @@ export default function ContactUs() {
                 >
                   Email Address
                 </label>
+
                 <input
-                  type="email"
-                  id="email"
                   name="email"
+                  type="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  placeholder="Email"
+                  className="w-full px-4 py-3 border border-gray-300 text-gray-700 placeholder:text-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
-
               <div className="mb-6">
                 <label
                   htmlFor="company"
@@ -102,13 +144,13 @@ export default function ContactUs() {
                   Company
                 </label>
                 <input
-                  type="text"
-                  id="company"
                   name="company"
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  value={formData.company}
+                  onChange={handleChange}
+                  placeholder="Company"
+                  className="w-full px-4 py-3 border border-gray-300 text-gray-700 placeholder:text-gray-600 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                 />
               </div>
-
               <div className="mb-6">
                 <label
                   htmlFor="message"
@@ -117,10 +159,12 @@ export default function ContactUs() {
                   Message
                 </label>
                 <textarea
-                  id="message"
                   name="message"
-                  placeholder="Tell us about your shipping requirements..."
-                  className="w-full px-4 py-3 border border-gray-300 rounded-md h-32 resize-vertical focus:outline-none focus:ring-2 focus:ring-blue-500"
+                  value={formData.message}
+                  onChange={handleChange}
+                  required
+                  placeholder="Message"
+                  className="w-full px-4 py-3 border border-gray-300 text-gray-700 placeholder:text-gray-600 rounded-md h-32 resize-vertical focus:outline-none focus:ring-2 focus:ring-blue-500"
                 ></textarea>
               </div>
 
@@ -130,6 +174,9 @@ export default function ContactUs() {
               >
                 Send Message
               </button>
+              {status && (
+                <p className="mt-4 text-base text-blue-700">{status}</p>
+              )}
             </form>
           </div>
         </div>
@@ -137,4 +184,3 @@ export default function ContactUs() {
     </section>
   );
 }
-
