@@ -2,6 +2,8 @@
 
 import { useEffect, useState } from "react";
 import clsx from "clsx";
+import Image from "next/image";
+import Logo from "@/public/logo/logo-transparent.png"
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -22,7 +24,7 @@ export default function Navbar() {
     if (target) {
       target.scrollIntoView({ behavior: "smooth", block: "start" });
     }
-    setMenuOpen(false); // close menu on mobile after click
+    setMenuOpen(false); 
   };
 
   return (
@@ -37,12 +39,12 @@ export default function Navbar() {
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <div className="flex items-center font-bold text-blue-600 text-lg">
-            <div className="w-9 h-9 rounded-full bg-gradient-to-br from-blue-600 to-blue-800 flex items-center justify-center relative mr-2">
-              <span className="absolute w-[18px] h-[2px] bg-white top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rounded-sm" />
-              <span className="absolute top-1/2 right-[7px] transform -translate-y-1/2 border-l-[3px] border-t-[2px] border-b-[2px] border-white" />
-            </div>
-            Rapid Miles Logistics
+          <div className="flex items-center">
+            <Image
+              src={Logo} 
+              alt="Rapid Miles Logistics Logo"
+              className="h-10 w-auto mr-2"
+            />
           </div>
 
           {/* Desktop Menu */}

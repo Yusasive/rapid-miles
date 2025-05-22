@@ -1,4 +1,6 @@
-import React from 'react'
+import React from "react";
+import Image from "next/image";
+import Logo from "@/public/logo/logo-light-transparent.png";
 
 export default function Footer() {
   return (
@@ -8,12 +10,19 @@ export default function Footer() {
           {/* Logo & Description */}
           <div>
             <div className="text-white text-xl font-semibold mb-4">
-              {/* Replace with logo if available */}
-              <div className="w-8 h-8 bg-white rounded-full inline-block mr-2"></div>
-              Rapid Miles Logistics
+              <div className="flex items-center">
+                <Image
+                  src={Logo}
+                  width={160}
+                  height={100}
+                  alt="Rapid Miles Logistics Logo"
+                  className="h-16 w-48 mr-2"
+                />
+              </div>
             </div>
             <p className="text-slate-400">
-              Connecting your business to the world through innovative logistics solutions.
+              Connecting your business to the world through innovative logistics
+              solutions.
             </p>
           </div>
 
@@ -22,22 +31,34 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-teal-400 hover:text-white transition">
+                <a
+                  href="#"
+                  className="text-teal-400 hover:text-white transition"
+                >
                   Ocean Freight
                 </a>
               </li>
               <li>
-                <a href="#" className="text-teal-400 hover:text-white transition">
+                <a
+                  href="#"
+                  className="text-teal-400 hover:text-white transition"
+                >
                   Air Freight
                 </a>
               </li>
               <li>
-                <a href="#" className="text-teal-400 hover:text-white transition">
+                <a
+                  href="#"
+                  className="text-teal-400 hover:text-white transition"
+                >
                   Ground Transportation
                 </a>
               </li>
               <li>
-                <a href="#" className="text-teal-400 hover:text-white transition">
+                <a
+                  href="#"
+                  className="text-teal-400 hover:text-white transition"
+                >
                   Warehousing
                 </a>
               </li>
@@ -49,22 +70,34 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Company</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-teal-400 hover:text-white transition">
+                <a
+                  href="#"
+                  className="text-teal-400 hover:text-white transition"
+                >
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-teal-400 hover:text-white transition">
+                <a
+                  href="#"
+                  className="text-teal-400 hover:text-white transition"
+                >
                   Careers
                 </a>
               </li>
               <li>
-                <a href="#" className="text-teal-400 hover:text-white transition">
+                <a
+                  href="#"
+                  className="text-teal-400 hover:text-white transition"
+                >
                   News
                 </a>
               </li>
               <li>
-                <a href="#" className="text-teal-400 hover:text-white transition">
+                <a
+                  href="#"
+                  className="text-teal-400 hover:text-white transition"
+                >
                   Sustainability
                 </a>
               </li>
@@ -76,22 +109,34 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Support</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#" className="text-teal-400 hover:text-white transition">
+                <a
+                  href="#"
+                  className="text-teal-400 hover:text-white transition"
+                >
                   Contact Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-teal-400 hover:text-white transition">
+                <a
+                  href="#"
+                  className="text-teal-400 hover:text-white transition"
+                >
                   Track Shipment
                 </a>
               </li>
               <li>
-                <a href="#" className="text-teal-400 hover:text-white transition">
+                <a
+                  href="#"
+                  className="text-teal-400 hover:text-white transition"
+                >
                   Help Center
                 </a>
               </li>
               <li>
-                <a href="#" className="text-teal-400 hover:text-white transition">
+                <a
+                  href="#"
+                  className="text-teal-400 hover:text-white transition"
+                >
                   Documentation
                 </a>
               </li>
@@ -101,9 +146,10 @@ export default function Footer() {
 
         {/* Footer Bottom */}
         <div className="border-t border-teal-500 pt-6 text-center text-teal-400 text-sm">
-          &copy; 2025 LogiFlow. All rights reserved. | Privacy Policy | Terms of Service
+          &copy; 2025 LogiFlow. All rights reserved. | Privacy Policy | Terms of
+          Service
         </div>
       </div>
     </footer>
-  )
+  );
 }

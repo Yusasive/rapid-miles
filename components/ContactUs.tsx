@@ -9,7 +9,8 @@ export default function ContactUs() {
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-gray-800">Get in Touch</h2>
           <p className="text-lg text-gray-600 mt-2">
-            Ready to optimize your logistics? Let's discuss your shipping needs
+            Ready to optimize your logistics? Let&apos;s discuss your shipping
+            needs
           </p>
         </div>
 

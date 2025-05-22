@@ -52,6 +52,8 @@ export default function Hero() {
           <div>
             <Image
               src={HeroImage}
+              width={500}
+              height={500}
               alt="Logistics Operations"
               className="w-full rounded-2xl shadow-[0_20px_40px_rgba(0,0,0,0.1)]"
             />

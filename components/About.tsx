@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function About() {
   const stats = [
@@ -48,9 +49,11 @@ export default function About() {
 
           {/* Image */}
           <div>
-            <img
-              src="/api/placeholder/500/400"
+            <Image
+              src="/images/partner1.jpg"
               alt="About Us"
+              width={500}
+              height={500}
               className="w-full rounded-2xl shadow-2xl"
             />
           </div>

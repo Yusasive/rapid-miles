@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 
 export default function Partners() {
   const partnerLogos = [
@@ -36,9 +37,11 @@ export default function Partners() {
                 key={idx}
                 className="w-40 mx-2 bg-[#f5f9ff] p-4 rounded-xl text-center flex-shrink-0"
               >
-                <img
+                <Image
                   src={logo.src}
                   alt={logo.alt}
+                  width={160}
+                  height={100}
                   className="w-full h-20 object-contain mx-auto"
                 />
               </div>

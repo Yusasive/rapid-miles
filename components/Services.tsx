@@ -29,7 +29,8 @@ export default function Services() {
             Comprehensive Logistics Solutions
           </h2>
           <p className="text-[#007f8c] mt-2">
-            From first mile to last mile, we've got your supply chain covered
+            From first mile to last mile, we&apos;ve got your supply chain
+            covered
           </p>
         </div>
 
