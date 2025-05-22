@@ -29,7 +29,7 @@ export default function Partners() {
         </div>
 
         <div className="relative w-full overflow-hidden">
-          <div className="flex whitespace-nowrap animate-marquee">
+          <div className="marquee-wrapper">
             {scrollingLogos.map((logo, idx) => (
               <div
                 key={idx}
