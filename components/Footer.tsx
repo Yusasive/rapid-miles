@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import Logo from "@/public/logo/logo.png";
+import Logo from "@/public/logo/Logo2.png";
 
 export default function Footer() {
   return (

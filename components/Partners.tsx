@@ -33,7 +33,7 @@ export default function Partners() {
             {scrollingLogos.map((logo, idx) => (
               <div
                 key={idx}
-                className="w-40 mx-2 bg-[#f5f9ff] p-4 rounded-xl text-center flex-shrink-0"
+                className="w-40 mx-2 bg-[#f5f9ff] p-2 rounded-xl text-center flex-shrink-0"
               >
                 <Image
                   src={logo.src}

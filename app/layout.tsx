@@ -15,21 +15,37 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title:
-    "Rapid Miles Logistics | Freight, Shipping & Delivery Solutions in Nigeria",
+  title: "Rapid Miles Logistics Fast Pickup & Last-Mile Delivery in Ilorin",
   description:
-    "Rapid Miles Logistics connects businesses with fast, reliable, and affordable freight and delivery services in Nigeria. We offer air, sea, and ground logistics tailored to your shipping needs.",
+    "Affordable same-day pickup & last-mile delivery in Ilorin! Rapid Miles Logistics offers fast, reliable parcel & e-commerce delivery services across ilorin. ✔ Timely ✔ Secure ✔ Customer-focused.",
   keywords: [
-    "logistics company in Nigeria",
-    "freight shipping",
-    "ocean freight",
-    "air freight",
-    "ground transportation",
-    "warehousing Nigeria",
-    "shipping company Ilorin",
-    "fast delivery logistics",
-    "supply chain services",
-    "cargo transport Nigeria",
+    "logistics company in Ilorin",
+    "Last-mile delivery services in Ilorin",
+    "Reliable pick-up and delivery company in Ilorin",
+    "Same-day parcel delivery Ilorin",
+    "Express courier services in Ilorin",
+    "Fast package pick-up and drop-off in Ilorin",
+    "Affordable last-mile logistics in Ilorin",
+    "Door-to-door delivery service in Ilorin",
+    "E-commerce delivery solutions in Ilorin",
+    "Local dispatch riders in Ilorin",
+    "On-demand package delivery in Ilorin",
+    "Best last-mile delivery company in Ilorin ",
+    "Quick pick-up service for businesses in Ilorin",
+    "Same-day grocery delivery Ilorin",
+    "Cheapest parcel delivery near me (Ilorin)",
+    "Fast document courier service in Ilorin",
+    "24/7 pick-up and delivery in ilorin",
+    "Reliable dispatch riders in Ilorin",
+    "Dispatch service for small businesses in Ilorin",
+    "Fragile item pick-up and delivery in Ilorin",
+    "Pharmacy/medication delivery in Ilorin",
+    "Food and restaurant delivery logistics in Ilorin",
+    "Retail goods pick-up and delivery Ilorin",
+    "Office supplies delivery service in Ilorin",
+    "Bulk item home delivery in ilorin",
+    "Fashion & apparel courier service in Ilorin",
+    "Electronics safe delivery in Ilorin",
   ],
   authors: [{ name: "Rapid Miles Logistics" }],
   creator: "Rapid Miles Logistics",
@@ -38,15 +54,14 @@ export const metadata: Metadata = {
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
   openGraph: {
-    title:
-      "Rapid Miles Logistics | Freight, Shipping & Delivery Solutions in Nigeria",
+    title: "Rapid Miles Logistics Fast Pickup & Last-Mile Delivery in Ilorin",
     description:
-      "Reliable and fast logistics services across Nigeria. Connect your business to the world with Rapid Miles Logistics.",
+      "Affordable same-day pickup & last-mile delivery in Ilorin! Rapid Miles Logistics offers fast, reliable parcel & e-commerce delivery services across ilorin. ✔ Timely ✔ Secure ✔ Customer-focused.",
     url: "https://www.rapidmileslogistics.netlify.app",
     siteName: "Rapid Miles Logistics",
     images: [
       {
-        url: "/images/paterner2.jpg",
+        url: "/logo/Logo2.png",
         width: 1200,
         height: 630,
         alt: "Rapid Miles Logistics Hero Image",
@@ -57,11 +72,11 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rapid Miles Logistics | Freight, Shipping & Delivery Solutions",
+    title: "Rapid Miles Logistics Fast Pickup & Last-Mile Delivery in Ilorin",
     description:
-      "We provide reliable and fast freight, warehousing, and logistics services across Nigeria. Contact us to optimize your supply chain.",
+      "Affordable same-day pickup & last-mile delivery in Ilorin! Rapid Miles Logistics offers fast, reliable parcel & e-commerce delivery services across ilorin. ✔ Timely ✔ Secure ✔ Customer-focused.",
     creator: "@RapidMiles",
-    images: ["/images/partner1.jpg"],
+    images: ["/logo/Logo1.png"],
   },
 };
 
