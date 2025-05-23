@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa";
+import { FaMapMarkerAlt, FaPhoneAlt, FaWhatsapp } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
 export default function ContactUs() {
@@ -82,6 +82,21 @@ export default function ContactUs() {
                   <strong>Phone</strong>
                   <br />
                   +234 906 653 6931
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4  text-black ">
+                <div className="w-12 h-12 bg-blue-600 text-white flex items-center justify-center rounded-full text-xl">
+                  <FaWhatsapp />
+                </div>
+                <div>
+                  <a
+                    href="https://wa.me/message/3T4GL6SX3XITI1"
+                    target="_blank"
+                  >
+                    <strong>WhatsApp</strong>
+                    <br /> +234 816 935 9828
+                  </a>
                 </div>
               </div>
 

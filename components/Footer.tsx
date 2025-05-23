@@ -15,7 +15,7 @@ export default function Footer() {
                   width={160}
                   height={100}
                   alt="Rapid Miles Logistics Logo"
-                  className="h-16 w-48 mr-2"
+                  className="mr-2"
                 />
               </div>
             </div>
@@ -90,7 +90,7 @@ export default function Footer() {
             <ul className="space-y-2">
               <li>
                 <a
-                  href="#"
+                  href="https://wa.me/message/3T4GL6SX3XITI1"
                   className="text-teal-400 hover:text-white transition"
                 >
                   Help Center
