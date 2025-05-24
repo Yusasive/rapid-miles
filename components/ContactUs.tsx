@@ -81,7 +81,7 @@ export default function ContactUs() {
                 <div>
                   <strong>Phone</strong>
                   <br />
-                  +234 906 653 6931
+                  +234 816 935 9828
                 </div>
               </div>
 

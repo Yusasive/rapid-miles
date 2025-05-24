@@ -5,8 +5,8 @@ import Image from "next/image";
 
 export default function About() {
   const stats = [
-    { number: "25K+", label: "Shipments Monthly" },
-    { number: "150+", label: "Countries Served" },
+    { number: "2K+", label: "Shipments Monthly" },
+    { number: "20+", label: "Business Served" },
     { number: "99.8%", label: "On-Time Delivery" },
     { number: "24/7", label: "Support Available" },
   ];
@@ -15,7 +15,6 @@ export default function About() {
     <section id="about" className="py-20 bg-[#f5f9ff]">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center">
-     
           <div>
             <h2 className="text-4xl font-semibold text-gray-800 mb-6">
               Leading the Future of Logistics
