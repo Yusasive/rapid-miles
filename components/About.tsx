@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function About() {
   const stats = [
-    { number: "2K+", label: "Shipments Monthly" },
+    { number: "2K+", label: "Monthly Deliveries" },
     { number: "20+", label: "Business Served" },
     { number: "99.8%", label: "On-Time Delivery" },
     { number: "24/7", label: "Support Available" },
